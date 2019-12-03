@@ -66,10 +66,10 @@ export default class App extends React.Component {
             </center>
           </Grid>
           <Grid item xs={12} sm={12}>
-          <center><TextField value={this.state.recipient} name="recipient-add" onChange={this.handleInput} id="outlined-basic" label="Enter Account Id or HNS Domain" variant="outlined" style = {{width: 500}} /></center>
+          <center><TextField value={this.state.recipient} name="recipient-add" onChange={this.handleInput} id="outlined-basic" label="Enter Account Id or HNS Domain" variant="outlined" fullWidth  /></center>
           </Grid>
           <Grid item xs={12} sm={12}>
-          <center><TextField type="number" value={this.state.amount} name="amount" onChange={this.handleInput} id="outlined-basic" label="Amount to Pay" variant="outlined" style = {{width: 500}} /></center>
+          <center><TextField type="number" value={this.state.amount} name="amount" onChange={this.handleInput} id="outlined-basic" label="Amount to Pay" variant="outlined" fullWidth  /></center>
           </Grid>
           <Grid item xs={12} sm={12}>
           <center><Button onClick={this.payAmount} size="large" className="pay-btn" variant="contained" color="primary">
