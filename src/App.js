@@ -54,11 +54,11 @@ export default class App extends React.Component {
     script.async = true;
     document.head.appendChild(script);
   }
-  
+
   render() {
     return (
       <div className="main">
-        <Grid container spacing={3}>``
+        <Grid container spacing={6}>
           <Grid item xs={12}>
             <center>
               <h1>Pay With Hbar</h1>
@@ -66,10 +66,10 @@ export default class App extends React.Component {
             </center>
           </Grid>
           <Grid item xs={12} sm={12}>
-          <center><TextField value={this.state.recipient} name="recipient-add" onChange={this.handleInput} id="outlined-basic" label="Enter Account Id or HNS Domain" variant="outlined" fullWidth  /></center>
+          <center><TextField style = {{width: 450}} value={this.state.recipient} name="recipient-add" onChange={this.handleInput} id="outlined-basic" label="Enter Account Id or HNS Domain" variant="outlined"  /></center>
           </Grid>
           <Grid item xs={12} sm={12}>
-          <center><TextField type="number" value={this.state.amount} name="amount" onChange={this.handleInput} id="outlined-basic" label="Amount to Pay" variant="outlined" fullWidth  /></center>
+          <center><TextField style = {{width: 450}} type="number" value={this.state.amount} name="amount" onChange={this.handleInput} id="outlined-basic" label="Amount to Pay" variant="outlined"  /></center>
           </Grid>
           <Grid item xs={12} sm={12}>
           <center><Button onClick={this.payAmount} size="large" className="pay-btn" variant="contained" color="primary">
